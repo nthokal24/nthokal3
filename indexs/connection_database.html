@@ -1,0 +1,20 @@
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "reg_info";
+
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// try with -----> localhost/Websites/connection.php
+
+if($conn)
+{
+    // echo "Connection Ok";
+}
+else
+{
+    echo "Connection Failed".mysqli_connect_error();
+}
+?>
